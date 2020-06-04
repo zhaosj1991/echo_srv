@@ -1,3 +1,4 @@
 .vscode
 a.out
+echo_srv
 *.o

@@ -112,7 +112,7 @@ int main(int argc, char * argv [])
                 ASSERT(conn != -1);
                 ASSERT(epollAdd(epfd, conn) == 0);
             }
-            else if (epEvent[i].events == EPOLLIN)
+            else if (epEvent[i].events & EPOLLIN)
             {
                 int conn = epEvent[i].data.fd;
                 int size = 0;
